@@ -1,0 +1,36 @@
+{
+  "name": "@elevenlabs/knex-cli",
+  "version": "0.9.0",
+  "description": "Knex CLI",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "knex-cli": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eleven-labs/knex-cli.git"
+  },
+  "author": "Eleven Labs",
+  "license": "MIT",
+  "homepage": "https://github.com/eleven-labs/knex-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "cli-table": "^0.3.1",
+    "commander": "^2.15.1",
+    "ejs": "^2.6.1",
+    "figlet": "^1.2.0",
+    "inquirer": "^6.0.0",
+    "knex": "^0.14.6",
+    "pg": "^7.4.3",
+    "pretty-hrtime": "^1.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/eleven-labs/knex-cli/issues"
+  },
+  "devDependencies": {}
+}

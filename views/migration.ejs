@@ -1,0 +1,25 @@
+'use strict';
+
+const <%= name %>Schema = {
+    up: (knex, Promise) => {
+        return Promise.all([<% if (type === 'create') { %>
+            knex.schema.createTable('<%= tableName %>', table => {
+                table.increments();
+                table.timestamps(true, true);
+            <% } else { %>
+            knex.schema.table('<%= tableName %>', table => {
+                // alter table<% } %>
+            })
+        ]);
+    },
+    down: (knex, Promise) => {
+        return Promise.all([<% if (type === 'create') { %>
+            knex.schema.dropTable('<%= tableName %>')<% } else { %>
+            knex.schema.table('<%= tableName %>', table => {
+                // reverse alternations
+            })<% } %>
+        ]);
+    }
+}
+
+module.exports = <%= name %>Schema;

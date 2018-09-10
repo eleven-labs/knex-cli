@@ -1,6 +1,6 @@
 {
   "name": "@elevenlabs/knex-cli",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Knex CLI",
   "main": "index.js",
   "preferGlobal": true,
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/eleven-labs/knex-cli.git"
   },
-  "author": "Eleven Labs",
+  "author": "Fabien PASQUET <fpasquet@gmail.com> (https://github.com/fpasquet)",
   "license": "MIT",
   "homepage": "https://github.com/eleven-labs/knex-cli#readme",
   "dependencies": {

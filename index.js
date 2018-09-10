@@ -28,11 +28,11 @@ console.log(
 cli
   .version('0.0.1')
   .description('DB Management')
-  .option('-s --stage [stage]', 'stage used', 'dev')
-  .option('-pc --path-config [pathConfig]', 'config used')
+  .option('-s --stage [stage]', 'Configures the current environment', 'dev')
+  .option('-c --config [config]', 'Path of the JSON config')
   .parse(process.argv);
 
-checkConfig({ stage: cli.stage, filePathConfig: cli.pathConfig });
+checkConfig({ stage: cli.stage, config: cli.config });
 
 console.log(`Using environment: ${chalk.red(`${cli.stage}`)}`);
 console.log(`Current project: ${chalk.green(`${process.env.project_name}`)}`);

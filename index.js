@@ -32,7 +32,7 @@ cli
   .option('-c --config [config]', 'Path of the JSON config')
   .parse(process.argv);
 
-checkConfig({ stage: cli.stage, config: cli.config });
+checkConfig({ stage: cli.stage, filePathConfig: cli.config });
 
 console.log(`Using environment: ${chalk.red(`${cli.stage}`)}`);
 console.log(`Current project: ${chalk.green(`${process.env.project_name}`)}`);

@@ -1,6 +1,6 @@
 {
   "name": "@elevenlabs/knex-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Knex CLI",
   "main": "index.js",
   "preferGlobal": true,
